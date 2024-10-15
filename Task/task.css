@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 20%;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar .button {
+    width: 70%;
+    padding: 12px;
+    margin-top: 40px;
+    top: 80%;
+    border-radius: 40px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    /* position: relative; */
+
+}
+.sidebar .task{
+    background-color: #000;
+    color: #fff;
+}
+
+.sidebar .logout {
+    position: absolute;
+    top: 80%;
+    left: 1px;
+    width: 180px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+
+}
+
+.maincontent {
+    height: 100vh;
+    width: 70%;
+    /* background-color:lightcoral; */
+}
+
+.maincontent .addtask {
+    padding: 10px;
+    margin-top: 5%;
+    margin-left: 2%;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    /* background-color: transparent; */
+    /* outline: none; */
+    /* border: none; */
+}
+
+.maincontent .list #h3 {
+    margin-top: 20px;
+    margin-left: 7%;
+}
+
+.todolist {
+    /* position: absolute; */
+    height: 40%;
+    width: 98%;
+    /* background-color: lightpink; */
+    overflow: scroll;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.todolist::-webkit-scrollbar {
+    display: none;
+}
+
+.todolist .addlist {
+    height: 10%;
+    width: 90%;
+    /* background-color: lightslategray; */
+    /* margin-left: 10%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    margin: 5px;
+    align-items: flex-start;
+
+}
+
+.checkincomplete {
+    /* float: left; */
+    margin-top: 15px;
+}
+
+.h5 {
+    margin-left: 25px;
+    font-size: 18px;
+    width: 90%;
+}
+
+.time {
+    margin-left: 40px;
+    margin-top: -5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.secondmain {
+    height: 33vh;
+    width: 60%;
+    /* background-color: lightskyblue; */
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.secondmain .completebtn {
+    margin-left: 20px;
+    padding: 10px;
+    /* border-radius: 10px; */
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+
+}
+
+.secondmain .nexttodo {
+    height: 25vh;
+    width: 99%;
+    /* background-color: lightcoral; */
+    overflow: scroll;
+}
+
+.nexttodo::-webkit-scrollbar {
+    display: none;
+}
+
+.secondmain .completetask {
+    margin-left: 10px;
+}
+
+.secondmain .setlist {
+    height: 4vh;
+    width: 70%;
+    /* background-color: rgba(143, 188, 143, 0.477); */
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.secondmain .setlist .h4 {
+    margin-left: 10px;
+}
+
+.h4{
+    text-decoration: line-through;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+/* .todolist .addlist .checkincomplete{
+    /* position: absolute; 
+    margin-top: 18px;
+    
+/* margin-top: 1px; */
+
+
+/* } */
+/* .todolist .addlist .h5{
+    margin-top: 5px;
+    margin-left:20px ;
+    font-size: 18px;
+}
+.todolist .addlist .time{
+    /* position: absolute; 
+    margin-top:25px;
+font-size: 15px;
+    margin-left: 30px;
+/* } 

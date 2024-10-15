@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="./Pop-up/PoP.css">
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <button class="button task"><i class="fa-solid fa-list-check"></i>
+            Task</button>
+        <button class="button location"><i class=" fa-solid fa-location-dot navicon"></i> Location</button>
+        <button class="button logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+    </div>
+
+    <div class="maincontent">
+        <button class="addtask">+ Add New Task</button>
+        <div class="list">
+            <h3 id="h3">Incomplete</h3>
+        </div>
+        <div class="todolist">
+            <div class="addlist">
+                <input type="checkbox" name="check" class="checkincomplete">
+                <h5 class="h5">Submit my resume</h5>
+                <span class="time"><i class="fa-solid fa-bell  timering"></i> Today , 3:00</span>
+            </div>
+            <div class="addlist">
+                <input type="checkbox" name="check" class="checkincomplete">
+                <h5 class="h5">Submit my resume</h5>
+                <span class="time"><i class="fa-solid fa-bell  timering"></i> Today , 3:00</span>
+            </div>
+            <div class="addlist">
+                <input type="checkbox" name="check" class="checkincomplete">
+                <h5 class="h5">Submit my resume</h5>
+                <span class="time"><i class="fa-solid fa-bell  timering"></i> Today , 3:00</span>
+            </div>
+
+
+        </div>
+        <div class="secondmain">
+            <button class="completebtn">Completed</button>
+            <div class="nexttodo">
+                <!-- <div class="setlist">
+                    <input type="checkbox" name="checkin" class="completetask">
+                    <h4 class="h4">Respond your Email</h4>
+                </div>
+                 -->
+            </div>
+
+
+        </div>
+
+    </div>
+
+<!-- Pop-up start here -->
+
+  <div class="popupmain">
+    <div class="container">
+        <h2 id="h2">New Task</h2>
+        <div class="inner summery">
+           <i class="fa-solid fa-list-check"></i>
+            <input type="summery" placeholder="Summery"  id="summery">
+        </div>
+        <hr style="width: 84%; margin-left: 57px;border: -2px solid black; ">
+        <div class="inner Description">
+            <i class="fa-solid fa-list"></i>
+            <input type="summery" placeholder="Description"id="Description" >
+        </div>
+        <hr style="width: 84%; margin-left: 57px;border: -2px solid black; ">
+        <div class="inner  Due-date">
+            <i class="fa-regular fa-clock"></i>
+            <input type="date" placeholder="Due-date"  id="Due-date">
+        </div>
+        <hr style="width: 84%; margin-left: 57px;border: -2px solid black; ">
+
+        <button class="btn" id="save">Save</button>
+        <button class="btn Cancel" id="cancel">Cancel</button>
+    </div>
+  </div>
+   
+    <script src="task.js"></script>
+</body>
+
+</html>

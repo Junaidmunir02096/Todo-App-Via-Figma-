@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main{
+    height: 300px;
+    width: 30%;
+    /* background-color: #f6f6f6; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main h2{
+    position: absolute;
+    top: 29%;
+    margin-top: 5px;
+    /* background-color: darkcyan; */
+}
+.main #email{
+    margin: 20px;
+    padding: 12px;
+    width: 69%;
+    border-radius: 3px;
+    border: none;
+    background-color:#f6f6f6;
+    font-size: 20px;
+}
+.show{
+    background-color: #f6f6ff;
+    width: 69%;
+    display: flex;
+    height: 15%;
+    border-radius: 3px;
+    border: none;
+    overflow: hidden;
+
+}
+
+
+.show #password{
+  width: 100%;
+  height:100%;
+  border: none;
+  background-color: #f6f6f6;
+  font-size: 20px;
+
+}
+.show #shhd{
+   background-color: transparent;
+   padding-top: 3px;
+   cursor: pointer;
+   background-color: #f6f6f6;
+}
+
+
+/* .main #password{
+    margin: 0px;
+    padding: 12px;
+    background-color: #f6f6f6;
+    width: 69%;
+    border-radius: 3px;
+    border: none;
+} */
+.main #btn{
+    position: absolute;
+    top: 65%;
+    padding: 10px;
+    margin-top: 0px;
+    width: 21%;
+    border-radius: 20px;
+    border: none;
+    background-color: #000;
+    color: #ffff;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}

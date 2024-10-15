@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+}
+
+.sidelocation {
+    height: 100%;
+    width: 20%;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidelocation .butn {
+    width: 70%;
+    padding: 12px;
+    margin-top: 40px;
+    top: 80%;
+    border-radius: 40px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    /* position: relative; */
+
+}
+.sidelocation .location{
+    background-color: rgba(0, 0, 0, 0.818);
+    color: #fff;
+}
+
+.sidelocation .logout {
+    position: absolute;
+    top: 80%;
+    left: 1px;
+    width: 180px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+
+    }
+
+}
+.leftside{
+    width: 80%;
+    height: 100%;
+    /* background-color: rgb(228, 188, 93); */
+    /* display: flex;
+    flex-direction: row; */
+}
+.leftside .checkbtn {
+    padding: 7px;
+    /* width: 10%; */
+    margin-top: 4%;
+    margin-left: 4%;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+     /* background-color: transparent; 
+     outline: none;
+     border: none;  */
+}
+.liststep #h4{
+margin-left: 50px;
+margin-top: 20px;
+text-transform: uppercase;
+}
+
+.leftside .loc{
+    height: 10%;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 7px;
+    background-color: lightpink;
+    display: none;
+    flex-direction: row;
+}
+.leftside .loc h5{
+    padding: 10px;
+}
+
+.coords{
+    display: flex;
+    column-gap: 20px;
+    margin-left: 25px;
+}
+.scroll{
+    height: 60vh;
+    width: 70%;
+    /* background-color: lightseagreen; */
+    overflow: scroll;
+
+}
+/* .scroll .loca{
+    height: 10%;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 7px;
+    background-color: lightpink;
+    display: flex;
+    flex-direction: row;
+} */
+
+.loca{
+    padding: 10px;
+    height: 10%;
+    width: 100%;
+    margin-left: 7%;
+    margin-top: 7px;
+    background-color: lightpink;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.scroll::-webkit-scrollbar{
+    display: none;
+}
